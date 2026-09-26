@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GodHeals Hospital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fas fa-phone-alt"></i> Emergency: <strong>1800-XXX-XXXX</strong></span>
+        <span><i class="fas fa-clock"></i> Open 24 x 7</span>
+      </div>
+      <div class="topbar-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="app/login.html" class="btn-topbar" target="_blank">Patient Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.svg" alt="GodHeals Hospital Logo" class="logo-img" />
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#specialties">Specialties <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cardiology</a></li>
+              <li><a href="#">Neurology</a></li>
+              <li><a href="#">Orthopaedics</a></li>
+              <li><a href="#">Oncology</a></li>
+              <li><a href="#">Gynaecology</a></li>
+              <li><a href="#">Paediatrics</a></li>
+              <li><a href="#">Gastroenterology</a></li>
+              <li><a href="#">Urology</a></li>
+            </ul>
+          </li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background: linear-gradient(135deg, #0a2a6e 0%, #1a6eb5 60%, #0ea5e9 100%);">
+        <div class="container hero-content">
+          <span class="hero-badge">Trusted Healthcare Since 2010</span>
+          <h1>Expert Healthcare,<br /><span class="highlight">Closer to You</span></h1>
+          <p>World-class medical care delivered with compassion. Your health is our highest calling.</p>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#specialties" class="btn btn-outline-light btn-lg">Our Specialties</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="hero-cross-wrap">
+            <svg viewBox="0 0 120 120" width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+              <rect x="44" y="18" width="32" height="84" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <rect x="18" y="44" width="84" height="32" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <path d="M60 80 C60 80 42 67 42 55 C42 48 47.5 43 53 46 C55.5 47.5 58 50.5 60 54 C62 50.5 64.5 47.5 67 46 C72.5 43 78 48 78 55 C78 67 60 80 60 80Z" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background: linear-gradient(135deg, #064e3b 0%, #065f46 60%, #059669 100%);">
+        <div class="container hero-content">
+          <span class="hero-badge">Advanced Diagnostics</span>
+          <h1>Healing with<br /><span class="highlight" style="color:#6ee7b7;">God's Grace</span></h1>
+          <p>State-of-the-art technology paired with heartfelt care for every patient, every time.</p>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="hero-cross-wrap">
+            <svg viewBox="0 0 120 120" width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+              <rect x="44" y="18" width="32" height="84" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <rect x="18" y="44" width="84" height="32" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <path d="M60 80 C60 80 42 67 42 55 C42 48 47.5 43 53 46 C55.5 47.5 58 50.5 60 54 C62 50.5 64.5 47.5 67 46 C72.5 43 78 48 78 55 C78 67 60 80 60 80Z" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 60%, #8b5cf6 100%);">
+        <div class="container hero-content">
+          <span class="hero-badge">Comprehensive Care</span>
+          <h1>Your Family's<br /><span class="highlight" style="color:#ddd6fe;">Health Partner</span></h1>
+          <p>From preventive care to complex surgeries — we are with you at every step of your health journey.</p>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#doctors" class="btn btn-outline-light btn-lg">Meet Our Doctors</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="hero-cross-wrap">
+            <svg viewBox="0 0 120 120" width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+              <rect x="44" y="18" width="32" height="84" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <rect x="18" y="44" width="84" height="32" rx="8" fill="rgba(255,255,255,0.25)"/>
+              <path d="M60 80 C60 80 42 67 42 55 C42 48 47.5 43 53 46 C55.5 47.5 58 50.5 60 54 C62 50.5 64.5 47.5 67 46 C72.5 43 78 48 78 55 C78 67 60 80 60 80Z" fill="white" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slider Controls -->
+    <button class="slider-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ========== QUICK STATS ========== -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-num" data-target="15">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Expert Doctors</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="10000">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Successful Surgeries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100000">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Happy Patients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPOINTMENT BANNER ========== -->
+  <section class="appointment-banner" id="appointment">
+    <div class="container appt-inner">
+      <div class="appt-text">
+        <h2>Book an Appointment</h2>
+        <p>Get expert medical advice from our specialists — quickly and conveniently.</p>
+      </div>
+      <form class="appt-form" id="apptForm">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <select>
+            <option value="" disabled selected>Select Specialty</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopaedics</option>
+            <option>Oncology</option>
+            <option>Gynaecology</option>
+            <option>Paediatrics</option>
+            <option>Gastroenterology</option>
+            <option>Urology</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="date" />
+        </div>
+        <button type="submit" class="btn btn-primary">Request Appointment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why GodHeals</span>
+        <h2>A Hospital That Truly Cares</h2>
+        <p>We combine medical expertise with genuine compassion to deliver care that makes a difference.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Empathy-Driven Care</h3>
+          <p>Every patient is treated like family. We listen, understand, and personalise care to your unique needs.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-user-md"></i></div>
+          <h3>Expert Specialists</h3>
+          <p>Our team of experienced doctors brings deep clinical expertise across all major medical specialties.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Advanced Technology</h3>
+          <p>Cutting-edge diagnostic equipment and surgical technologies for precise, effective treatment.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Patient Safety First</h3>
+          <p>Rigorous protocols and a culture of safety ensures the highest standard of care at all times.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Affordable Excellence</h3>
+          <p>Premium healthcare made accessible. Quality medical services without compromising on affordability.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-ambulance"></i></div>
+          <h3>24/7 Emergency Care</h3>
+          <p>Round-the-clock emergency services with rapid response teams available at any hour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIALTIES ========== -->
+  <section class="specialties" id="specialties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Medical Expertise</span>
+        <h2>Our Specialties</h2>
+        <p>Comprehensive care across a wide range of medical disciplines under one roof.</p>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#fee2e2;color:#dc2626;"><i class="fas fa-heart"></i></div>
+          <h4>Cardiology</h4>
+          <p>Advanced heart care with interventional cardiology and cardiac surgery.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#dbeafe;color:#2563eb;"><i class="fas fa-brain"></i></div>
+          <h4>Neurology</h4>
+          <p>Expert diagnosis and treatment of brain, spine, and nervous system disorders.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#fef3c7;color:#d97706;"><i class="fas fa-bone"></i></div>
+          <h4>Orthopaedics</h4>
+          <p>Joint replacements, sports medicine and trauma care by expert surgeons.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#fce7f3;color:#db2777;"><i class="fas fa-ribbon"></i></div>
+          <h4>Oncology</h4>
+          <p>Comprehensive cancer care including chemotherapy, radiation and surgical oncology.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#d1fae5;color:#059669;"><i class="fas fa-baby"></i></div>
+          <h4>Paediatrics</h4>
+          <p>Dedicated child health services from newborn care to adolescent medicine.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#ede9fe;color:#7c3aed;"><i class="fas fa-female"></i></div>
+          <h4>Gynaecology</h4>
+          <p>Complete women's health care from routine check-ups to complex surgeries.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#ffedd5;color:#ea580c;"><i class="fas fa-stomach"></i></div>
+          <h4>Gastroenterology</h4>
+          <p>Expert care for digestive disorders, liver diseases and endoscopic procedures.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon" style="background:#cffafe;color:#0891b2;"><i class="fas fa-lungs"></i></div>
+          <h4>Pulmonology</h4>
+          <p>Diagnosis and treatment of respiratory diseases and lung conditions.</p>
+          <a href="#" class="spec-link">Know More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOCTOR SECTION ========== -->
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Meet Our Team</span>
+        <h2>Our Doctors</h2>
+        <p>Skilled, compassionate doctors committed to delivering the best possible outcomes for you.</p>
+      </div>
+      <div class="doctors-grid">
+        <div class="doctor-card featured">
+          <div class="doctor-img-wrap">
+            <div class="doctor-avatar">
+              <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" width="120" height="140">
+                <defs>
+                  <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1a6eb5"/>
+                    <stop offset="100%" style="stop-color:#0ea5e9"/>
+                  </linearGradient>
+                </defs>
+                <rect width="120" height="140" fill="url(#avatarBg)" rx="8"/>
+                <!-- Body / coat -->
+                <rect x="25" y="88" width="70" height="52" rx="6" fill="white" opacity="0.95"/>
+                <!-- Stethoscope hint -->
+                <path d="M48 95 Q60 110 72 95" stroke="#1a6eb5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <!-- Head -->
+                <circle cx="60" cy="68" r="24" fill="#fde8d8"/>
+                <!-- Hair -->
+                <path d="M36 60 Q38 40 60 38 Q82 40 84 60 Q80 48 60 48 Q40 48 36 60Z" fill="#3b2314"/>
+                <!-- Eyes -->
+                <circle cx="52" cy="66" r="3" fill="#3b2314"/>
+                <circle cx="68" cy="66" r="3" fill="#3b2314"/>
+                <!-- Smile -->
+                <path d="M52 76 Q60 82 68 76" stroke="#c0714f" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- Collar / tie -->
+                <path d="M52 92 L60 102 L68 92 L60 88Z" fill="#1a6eb5"/>
+                <!-- Cross on coat -->
+                <rect x="56" y="108" width="8" height="16" rx="2" fill="#0ea5e9" opacity="0.6"/>
+                <rect x="52" y="112" width="16" height="8" rx="2" fill="#0ea5e9" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="doctor-badge">General Physician</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Abishek R</h3>
+            <span class="doctor-qual">M.B.B.S</span>
+            <p class="doctor-desc">A dedicated medical professional committed to providing compassionate, evidence-based primary care to patients of all ages.</p>
+            <div class="doctor-meta">
+              <span><i class="fas fa-star"></i> General Medicine</span>
+              <span><i class="fas fa-clock"></i> Available: Mon–Sat</span>
+            </div>
+            <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+          </div>
+        </div>
+
+        <!-- Dr. Jesica A -->
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-avatar">
+              <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" width="120" height="140">
+                <defs>
+                  <linearGradient id="avatarBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#7c3aed"/>
+                    <stop offset="100%" style="stop-color:#a78bfa"/>
+                  </linearGradient>
+                </defs>
+                <rect width="120" height="140" fill="url(#avatarBg2)" rx="8"/>
+                <rect x="25" y="88" width="70" height="52" rx="6" fill="white" opacity="0.95"/>
+                <path d="M48 95 Q60 110 72 95" stroke="#7c3aed" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <circle cx="60" cy="68" r="24" fill="#fde8d8"/>
+                <path d="M34 62 Q36 36 60 34 Q84 36 86 62 Q84 44 60 44 Q36 44 34 62Z" fill="#1a0a00"/>
+                <path d="M34 62 Q30 80 34 92 Q36 80 36 70Z" fill="#1a0a00"/>
+                <path d="M86 62 Q90 80 86 92 Q84 80 84 70Z" fill="#1a0a00"/>
+                <ellipse cx="52" cy="66" rx="3" ry="3.5" fill="#1a0a00"/>
+                <ellipse cx="68" cy="66" rx="3" ry="3.5" fill="#1a0a00"/>
+                <path d="M49 63 Q52 61 55 63" stroke="#1a0a00" stroke-width="1" fill="none"/>
+                <path d="M65 63 Q68 61 71 63" stroke="#1a0a00" stroke-width="1" fill="none"/>
+                <path d="M53 76 Q60 83 67 76" stroke="#c0714f" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M52 92 L60 102 L68 92 L60 88Z" fill="#7c3aed"/>
+                <rect x="56" y="108" width="8" height="16" rx="2" fill="#7c3aed" opacity="0.6"/>
+                <rect x="52" y="112" width="16" height="8" rx="2" fill="#7c3aed" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="doctor-badge" style="background:#7c3aed;">MD Specialist</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Jesica A</h3>
+            <span class="doctor-qual" style="background:#ede9fe;color:#7c3aed;">M.B.B.S, MBA</span>
+            <p class="doctor-desc">A highly qualified medical professional blending clinical expertise with healthcare management, delivering comprehensive patient-centred specialist care.</p>
+            <div class="doctor-meta">
+              <span><i class="fas fa-star" style="color:#7c3aed;"></i> MD Specialist</span>
+              <span><i class="fas fa-clock" style="color:#7c3aed;"></i> Available: Mon–Sat</span>
+            </div>
+            <a href="#appointment" class="btn btn-sm" style="background:#7c3aed;color:#fff;border-color:#7c3aed;">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-card placeholder-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-avatar placeholder-avatar">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <div class="doctor-badge">Coming Soon</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Specialist Doctor</h3>
+            <span class="doctor-qual">More Specialists</span>
+            <p class="doctor-desc">Additional specialist doctors will be listed here in Phase 2.</p>
+            <a href="#appointment" class="btn btn-outline btn-sm">Enquire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">What We Offer</span>
+        <h2>Our Services</h2>
+        <p>A full spectrum of healthcare services designed to meet every patient's needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fas fa-flask"></i>
+          <span>Pathology &amp; Lab</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-x-ray"></i>
+          <span>Radiology &amp; Imaging</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-procedures"></i>
+          <span>ICU &amp; Critical Care</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-ambulance"></i>
+          <span>Emergency &amp; Trauma</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-cut"></i>
+          <span>Surgical Services</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-pills"></i>
+          <span>In-house Pharmacy</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-baby-carriage"></i>
+          <span>Maternity Care</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-dumbbell"></i>
+          <span>Physiotherapy</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-tooth"></i>
+          <span>Dental Care</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-eye"></i>
+          <span>Ophthalmology</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-video"></i>
+          <span>Teleconsultation</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-hospital-user"></i>
+          <span>Health Checkup Packages</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Patient Stories</span>
+        <h2>What Our Patients Say</h2>
+        <p>Real experiences from people whose lives we've touched.</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"The doctors and nursing staff at GodHeals are truly exceptional. I felt cared for at every step, and the treatment I received was world-class. I'm grateful for this hospital."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#dbeafe;color:#1d4ed8;">R</div>
+            <div>
+              <strong>Ramesh K.</strong>
+              <span>Cardiology Patient</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"From the moment I walked in, I felt welcome. The team handled my mother's surgery with great skill and sensitivity. GodHeals truly lives up to its name."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#fce7f3;color:#db2777;">S</div>
+            <div>
+              <strong>Santhiya M.</strong>
+              <span>Family of Orthopaedics Patient</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Dr. Abishek is one of the most thorough and caring doctors I have ever met. He took time to listen and explain every step. I highly recommend GodHeals Hospital."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#d1fae5;color:#059669;">P</div>
+            <div>
+              <strong>Priya V.</strong>
+              <span>General Medicine Patient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="testi-prev" id="testiPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="testi-dots" id="testiDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <button class="testi-next" id="testiNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <div class="section-header left-align">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Contact Us</h2>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>To be updated soon</span>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Emergency Helpline</strong>
+              <span>1800-XXX-XXXX (24/7)</span>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>info@godhealshospital.com</span>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>24 Hours / 7 Days a Week</span>
+            </div>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="Mobile Number" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <img src="assets/images/logo-white.svg" alt="GodHeals Logo" class="footer-logo" />
+        <p>GodHeals Hospital is dedicated to providing compassionate, high-quality healthcare guided by the grace of God.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#specialties">Specialties</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Specialties</h4>
+        <ul>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopaedics</a></li>
+          <li><a href="#">Oncology</a></li>
+          <li><a href="#">Paediatrics</a></li>
+          <li><a href="#">Gynaecology</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Patient Services</h4>
+        <ul>
+          <li><a href="#">Book Appointment</a></li>
+          <li><a href="#">Health Packages</a></li>
+          <li><a href="#">Teleconsultation</a></li>
+          <li><a href="app/login.html" target="_blank">Patient Portal</a></li>
+          <li><a href="#">Insurance &amp; Billing</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 GodHeals Hospital. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ========== APPOINTMENT SUCCESS MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Appointment Requested!</h3>
+      <p>Thank you! Your appointment request has been received. Our team will contact you shortly to confirm.</p>
+      <button class="btn btn-primary" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
